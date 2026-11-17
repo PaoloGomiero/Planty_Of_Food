@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+backend/src/data/conversations.json
+frontend/src/data/conversations.json
+frontend/.gitignore
+frontend/README.md

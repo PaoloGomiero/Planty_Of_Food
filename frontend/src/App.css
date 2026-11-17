@@ -1,0 +1,165 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7ef;
+  color: #263b2b;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #244b35;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #d5e5d6;
+}
+
+.chat-container {
+  width: min(760px, 92%);
+  margin: 55px auto;
+  flex: 1;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome h1 {
+  font-size: 38px;
+  color: #244b35;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #68796b;
+}
+
+.messages {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 16px 20px;
+  border-radius: 16px;
+  line-height: 1.5;
+}
+
+.message.assistant {
+  background: white;
+  align-self: flex-start;
+  border: 1px solid #e1e9dd;
+}
+
+.message.user {
+  background: #dcebd8;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #cbd8c8;
+  border-radius: 12px;
+  font-size: 15px;
+  outline-color: #4c8059;
+}
+
+.input-area button {
+  padding: 0 25px;
+  border: none;
+  border-radius: 12px;
+  background: #356747;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #244b35;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #718071;
+  font-size: 13px;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.recipe-card {
+  background: white;
+  border: 1px solid #e1e9dd;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.recipe-content {
+  padding: 18px;
+}
+
+.recipe-content h2 {
+  color: #244b35;
+  font-size: 19px;
+}
+
+.recipe-content h3 {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.recipe-content li {
+  margin-bottom: 6px;
+  color: #536456;
+}
+
+.recipe-content a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #356747;
+  font-weight: bold;
+  text-decoration: none;
+}
