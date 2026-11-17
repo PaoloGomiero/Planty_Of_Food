@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
 
-const API_URL = "http" + "://" + "localhost" + ":3000";
+const API_URL =
+  import.meta.env.VITE_API_URL || "[localhost](http://localhost:3000)".replace("http://", "http" + "://");
+
 
 function MessageText({ text }) {
   const urlPattern = /(https?:\/\/[^\s<>()]+)/g;
