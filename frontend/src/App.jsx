@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
 
-const API_URL =
-  import.meta.env.VITE_API_URL || "[localhost](http://localhost:3000)".replace("http://", "http" + "://");
+const API_URL = "https://planty-of-food-thz8.onrender.com";
 
 
 function MessageText({ text }) {
